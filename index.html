@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add iPhone Product</title>
+</head>
+
+<body>
+    <h1>Add New iPhone Product</h1>
+    <form action="http://localhost:3001/add-product-full" method="POST">
+        <div>
+           
+            <label for="name">Product product url:</label><br>
+            <input type="text" id="name" name="product_url" required> <br> 
+            <label for="name">Product Name:</label><br>
+            <input type="text" id="name" name="product_name" required><br>
+        </div>
+        <div>
+            <label for="price">price_range:</label><br>
+            <input type="text" id="price" name="price_range" step="0.01" required><br>
+            <label for="price">starting_price:</label><br>
+            <input type="text" id="price" name="starting_price" step="0.01" required><br>
+
+        </div>
+        <div>
+            <label for="description">product_brief_description:</label><br>
+            <textarea id="description" name="product_brief_description" required>
+            </textarea><br>
+            <label for="price">product_description:</label><br>
+            <input type="text" id="price" name="product_description" step="0.01" required><br>
+
+            <label for="price">product_img:</label><br>
+            <input type="text" id="price" name="product_img" 
+            step="0.01" 
+            required>
+        </div>
+        
+        
+        <button type="submit">Add Product</button>
+    </form>
+</body>
+
+</html>
